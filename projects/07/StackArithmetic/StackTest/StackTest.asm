@@ -20,16 +20,13 @@ D=M
 @SP
 A=M-1
 D=M-D
-@26
-D;JEQ
-@SP
-A=M-1
 M=0
-@29
-0;JMP
+@END_EQ.StackTest.0
+D;JNE
 @SP
 A=M-1
 M=-1
+(END_EQ.StackTest.0)
 //push constant 17
 @17
 D=A
@@ -52,16 +49,13 @@ D=M
 @SP
 A=M-1
 D=M-D
-@55
-D;JEQ
-@SP
-A=M-1
 M=0
-@58
-0;JMP
+@END_EQ.StackTest.1
+D;JNE
 @SP
 A=M-1
 M=-1
+(END_EQ.StackTest.1)
 //push constant 16
 @16
 D=A
@@ -84,16 +78,13 @@ D=M
 @SP
 A=M-1
 D=M-D
-@84
-D;JEQ
-@SP
-A=M-1
 M=0
-@87
-0;JMP
+@END_EQ.StackTest.2
+D;JNE
 @SP
 A=M-1
 M=-1
+(END_EQ.StackTest.2)
 //push constant 892
 @892
 D=A
@@ -116,16 +107,13 @@ D=M
 @SP
 A=M-1
 D=M-D
-@113
-D;JLT
-@SP
-A=M-1
 M=0
-@116
-0;JMP
+@END_LT.StackTest.0
+D;JGE
 @SP
 A=M-1
 M=-1
+(END_LT.StackTest.0)
 //push constant 891
 @891
 D=A
@@ -148,16 +136,13 @@ D=M
 @SP
 A=M-1
 D=M-D
-@142
-D;JLT
-@SP
-A=M-1
 M=0
-@145
-0;JMP
+@END_LT.StackTest.1
+D;JGE
 @SP
 A=M-1
 M=-1
+(END_LT.StackTest.1)
 //push constant 891
 @891
 D=A
@@ -180,16 +165,13 @@ D=M
 @SP
 A=M-1
 D=M-D
-@171
-D;JLT
-@SP
-A=M-1
 M=0
-@174
-0;JMP
+@END_LT.StackTest.2
+D;JGE
 @SP
 A=M-1
 M=-1
+(END_LT.StackTest.2)
 //push constant 32767
 @32767
 D=A
@@ -212,16 +194,13 @@ D=M
 @SP
 A=M-1
 D=M-D
-@200
-D;JGT
-@SP
-A=M-1
 M=0
-@203
-0;JMP
+@END_GT.StackTest.0
+D;JLE
 @SP
 A=M-1
 M=-1
+(END_GT.StackTest.0)
 //push constant 32766
 @32766
 D=A
@@ -244,16 +223,13 @@ D=M
 @SP
 A=M-1
 D=M-D
-@229
-D;JGT
-@SP
-A=M-1
 M=0
-@232
-0;JMP
+@END_GT.StackTest.1
+D;JLE
 @SP
 A=M-1
 M=-1
+(END_GT.StackTest.1)
 //push constant 32766
 @32766
 D=A
@@ -276,16 +252,13 @@ D=M
 @SP
 A=M-1
 D=M-D
-@258
-D;JGT
-@SP
-A=M-1
 M=0
-@261
-0;JMP
+@END_GT.StackTest.2
+D;JLE
 @SP
 A=M-1
 M=-1
+(END_GT.StackTest.2)
 //push constant 57
 @57
 D=A
