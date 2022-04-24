@@ -130,6 +130,6 @@ class Math {
     }
 
     function boolean bit_clr(int value, int i) {
-        return value & (~bits[i]);
+        return value & ~bits[i];
     }
 }
